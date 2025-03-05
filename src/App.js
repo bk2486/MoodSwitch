@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { MoodThemeProvider } from "./components/MoodThemeProvider"
+import MoodSwitcher from "./components/MoodSwitcher"
+import "./App.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <MoodThemeProvider>
+      <div className="app-container">
+        <main>
+          <h1>Mood Themes</h1>
+          <p className="subtitle">Select a mood to transform the interface</p>
+          <MoodSwitcher />
+        </main>
+      </div>
+    </MoodThemeProvider>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,93 @@
+.mood-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .mood-buttons {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    overflow-x: auto; 
+    padding: 0.5rem 0;
+  }
+  
+  .mood-button {
+    padding: 0.8rem 1rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mood-icon {
+    margin-right: 0.3rem;
+    font-size: 1.1rem;
+  }
+  
+  .mood-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .mood-button.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .surprise-button {
+    padding: 0.8rem 1.8rem;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  
+  .surprise-button:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (max-width: 768px) {
+    .mood-buttons {
+      padding: 0.5rem;
+    }
+  
+    .mood-button {
+      padding: 0.7rem 0.9rem;
+      font-size: 0.85rem;
+    }
+  
+    .mood-icon {
+      font-size: 1rem;
+    }
+  
+    .surprise-button {
+      padding: 0.7rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  

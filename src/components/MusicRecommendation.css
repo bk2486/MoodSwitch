@@ -1,0 +1,46 @@
+.music-recommendation {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .music-recommendation h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .spotify-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .spotify-link:hover {
+    opacity: 0.8;
+  }
+  
+  .spotify-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 600px) {
+    .music-recommendation {
+      padding: 1.2rem;
+    }
+  
+    .music-recommendation h3 {
+      font-size: 1.1rem;
+    }
+  }
+  
+  
