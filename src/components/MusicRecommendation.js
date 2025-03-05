@@ -5,11 +5,11 @@ import "./MusicRecommendation.css"
 
 // Spotify playlist links for each mood
 const moodPlaylists = {
-  happy: "https://open.spotify.com/",
-  calm: "https://open.spotify.com/",
-  energetic: "https://open.spotify.com/",
-  melancholy: "https://open.spotify.com/",
-  creative: "https://open.spotify.com/",
+  happy: "https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC",
+  calm: "https://open.spotify.com/playlist/37i9dQZF1EIfTmpqlGn32s",
+  energetic: "https://open.spotify.com/playlist/37i9dQZF1EIeU3RFfPV9ui",
+  melancholy: "https://open.spotify.com/playlist/37i9dQZF1DWVrtsSlLKzro",
+  creative: "https://open.spotify.com/playlist/37i9dQZF1DWWn6teJIIcfG",
 }
 
 // Playlist names for display
